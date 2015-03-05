@@ -25,11 +25,9 @@ addEventListener("DOMContentLoaded", function(e) {
 			drawOnCanvas(left, top, renderFalseCircle);
 			states.points.push({x : [left, top], y : -1});
 		}
+		setTimeout(update, 100);
 	}, false);
 
-	setInterval(function() {
-		update();
-	}, 1000/60);
 
 	document.getElementById("reset").addEventListener("click", function(e) {
 		states.points = [];
