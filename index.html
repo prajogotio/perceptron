@@ -1,0 +1,22 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/perceptron.js"></script>
+</head>
+<body>
+	<div class="header"><span style="color:yellow;">Perceptron</span> - Live Demo</div>
+	<div class="instruction">On the canvas below, <span style="color:rgb(70, 255, 70);">left click</span> for <span style="color:rgb(70, 255, 70);">green</span> circle, <span style="color:red;">right click</span> for <span style="color:red;">red</span> circle"</div>
+	<canvas id="perceptron-canvas" width="924" height="500">
+	</canvas>
+	<div class="loading" id="loading">
+		Perceptron is Recalculating...
+	</div>
+	<div class="control">
+		<div>
+			<div>Iteration Limit: </div> <div><input id="iterlimit" type="text" value="200000"></div> <div><span style="color:yellow;">[Press Enter to confirm]</span></div>
+		</div>
+		<div><button id="reset">Reset Perceptron</button></div>
+
+	</div>
+</body>
+</html>
